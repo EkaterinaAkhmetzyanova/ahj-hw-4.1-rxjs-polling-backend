@@ -38,7 +38,7 @@ router.get('/messages/unread', async (ctx) => {
       from: faker.internet.email(),
       subject: faker.lorem.words(),
       body: faker.lorem.sentences(),
-      received: new Date().toLocaleString('ru');
+      received: new Date().toLocaleString('ru'),
     };
     messages.push(message);
   };
